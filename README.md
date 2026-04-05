@@ -56,22 +56,17 @@ The expected outcome of this project is a multimodal question‑answering system
 ### High‑Level Pipeline
 
 
-### Mermaid Diagram
+upplier SOP PDF  
+→ PDF Parsing (text, tables, images)  
+→ Content chunking with page‑level metadata  
+→ Semantic embeddings for all modalities  
+→ Vector indexing using FAISS  
+→ Natural‑language query embedding  
+→ Similarity search in vector store  
+→ Retrieved content returned with source references  
 
-```mermaid
-flowchart TD
-    A[Supplier SOP PDF] --> B[PyMuPDF Parser]
-    B --> C[Text Chunks]
-    B --> D[Table Chunks]
-    B --> E[Image Summaries]
-    C --> F[Embedding Model]
-    D --> F
-    E --> F
-    F --> G[FAISS Vector Index]
-    H[User Query] --> I[Query Embedding]
-    I --> G
-    G --> J[Top‑K Retrieved Chunks]
-    J --> K[FastAPI Response with Sources]
+This architecture ensures that queries are answered only using supplier‑authored content, with full traceability to the original document and page.
+
 
 ---
 
