@@ -54,26 +54,7 @@ The expected outcome of this project is a multimodal question‑answering system
 ## 2. Architecture Overview
 
 ### High‑Level Pipeline
-PDF Document
-│
-▼
-PyMuPDF Parsing
-(Text / Tables / Images)
-│
-▼
-Chunk Creation + Metadata
-│
-▼
-Sentence‑Transformer Embeddings
-│
-▼
-FAISS Vector Index
-│
-▼
-FastAPI /query Endpoint
-│
-▼
-Grounded Retrieval Output
+
 
 ### Mermaid Diagram
 
