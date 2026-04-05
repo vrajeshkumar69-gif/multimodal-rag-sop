@@ -180,25 +180,7 @@ This query retrieves image‑summary chunks derived from figures and diagrams in
 
 ---
 
-## 7. Limitations & Future Work
-Limitations
-
-Retrieval‑only (no generative summarisation)
-Images handled as semantic summaries
-In‑memory vector index
-No access control or audit logging
-
----
-
-## 8. Future Work
-
-Add LLM‑generated answers with citations
-Persist FAISS index
-Image reasoning via Vision‑Language Models
-Advanced reranking and relevance scoring
-Enterprise authentication and governance features
-
-## 9. Conclusion
+## 7. Conclusion
 This project demonstrates a complete, grounded, and explainable multimodal RAG system for querying supplier‑owned technical SOP documents, with strong alignment to real‑world OEM operational requirements.
 
 ---
