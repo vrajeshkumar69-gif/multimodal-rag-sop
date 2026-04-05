@@ -70,9 +70,13 @@ This architecture ensures that queries are answered only using supplier‑author
 ### Mermaid
 
 +---------------------------+
+
 |  Supplier SOP PDF         |
+
 +-------------+-------------+
+
               |
+              
               v
 +---------------------------+
 |   PDF Parsing (PyMuPDF)   |
