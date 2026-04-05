@@ -55,8 +55,7 @@ The expected outcome of this project is a multimodal question‑answering system
 
 ### High‑Level Pipeline
 
-
-upplier SOP PDF  
+Supplier SOP PDF  
 → PDF Parsing (text, tables, images)  
 → Content chunking with page‑level metadata  
 → Semantic embeddings for all modalities  
@@ -64,6 +63,14 @@ upplier SOP PDF
 → Natural‑language query embedding  
 → Similarity search in vector store  
 → Retrieved content returned with source references  
+
+### Architecture Overview
+
+The following diagram illustrates the end‑to‑end architecture of the Multimodal RAG system.
+
+![Architecture Diagram](screenshots/Architecture.PNG)
+
+
 
 This architecture ensures that queries are answered only using supplier‑authored content, with full traceability to the original document and page.
 
@@ -120,12 +127,47 @@ Performs semantic retrieval with grounded references.
 
 ## 6. Screenshots
 
-Swagger UI overview — screenshots/swagger.png
-Health endpoint — screenshots/health.png
-Document ingestion — screenshots/ingest.png
-Text‑based query — screenshots/text_query.png
-Table‑based query — screenshots/table_query.png
-Image / figure query — screenshots/image_query.png
+
+### Swagger UI
+
+The Swagger UI below shows all available API endpoints.
+
+![Swagger UI](screenshots/swagger.png)
+
+
+### Health Endpoint
+
+The `/health` endpoint confirms that the system is running correctly and reports the number of indexed document chunks.
+
+![Health Endpoint](screenshots/Health.png)
+
+
+### Successful PDF Ingestion
+
+This screenshot shows a successful `POST /ingest` request with a multimodal SOP PDF and the corresponding response.
+
+![PDF Ingestion](screenshots/Ingest.png)
+
+
+### Text‑Based Query
+
+The following query retrieves text‑based information from the SOP document with page‑level grounding.
+
+![Text Query](screenshots/text_query.png)
+
+
+### Table‑Based Query
+
+This query retrieves information originally stored in tables, including numerical thresholds and limits.
+
+![Table Query](screenshots/table_query.png)
+
+
+### Image‑Based Query
+
+This query retrieves image‑summary chunks derived from figures and diagrams in the SOP document.
+
+![Image Query](screenshots/image_query.png)
 
 
 ### Text-based Query
