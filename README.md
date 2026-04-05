@@ -127,6 +127,15 @@ Text‑based query — screenshots/text_query.png
 Table‑based query — screenshots/table_query.png
 Image / figure query — screenshots/image_query.png
 
+
+### Text-based Query
+![Text Query](screenshots/text_query.png)
+
+
+
+
+
+
 ---
 
 ## 7. Limitations & Future Work
