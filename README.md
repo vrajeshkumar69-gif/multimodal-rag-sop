@@ -92,7 +92,7 @@ flowchart TD
     G --> J[Top‑K Retrieved Chunks]
     J --> K[FastAPI Response with Sources]
 
-
+---
 
 ## 3. Technology Choices
 
@@ -115,6 +115,8 @@ Images are currently handled via text summaries; future versions could leverage 
 API Framework (FastAPI)
 Chosen for performance, automatic OpenAPI documentation, and easy integration with Pydantic models.
 
+---
+
 ## 4. Setup Instructions
 Clone Repository
 git clone <repository-url>
@@ -129,6 +131,8 @@ python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
 Open Swagger UI
 http://localhost:8000/
 
+---
+
 ## 5. API Documentation
 GET /health
 Returns system status and indexed chunk count.
@@ -136,6 +140,8 @@ POST /ingest
 Uploads a PDF and indexes text, tables, and images.
 POST /query
 Performs semantic retrieval with grounded references.
+
+---
 
 ## 6. Screenshots
 
@@ -146,6 +152,7 @@ Text‑based query — screenshots/text_query.png
 Table‑based query — screenshots/table_query.png
 Image / figure query — screenshots/image_query.png
 
+---
 
 ## 7. Limitations & Future Work
 Limitations
@@ -154,6 +161,8 @@ Retrieval‑only (no generative summarisation)
 Images handled as semantic summaries
 In‑memory vector index
 No access control or audit logging
+
+---
 
 ## 8. Future Work
 
