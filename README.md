@@ -178,10 +178,9 @@ This query retrieves image‑summary chunks derived from figures and diagrams in
 
 ## 7. Limitation and Future work
 The current system focuses on strict grounding and traceability and therefore has some limitations. Visual content such as diagrams and symbols is indexed only as references, without semantic interpretation, requiring users to manually inspect images. Retrieval is primarily text‑driven; although tables are preserved and retrievable, advanced numerical reasoning or cross‑table validation is not supported. To avoid hallucination, no generative synthesis is applied, which can lead to fragmented responses when information spans multiple sections. Additionally, the system assumes a single‑document context and lacks enterprise‑grade governance features such as audit logs or access control.
+
+
 Future work includes integrating vision‑language models for true diagram understanding, adding a controlled LLM layer for concise, citation‑based answer synthesis, enabling table‑aware reasoning, supporting multi‑document retrieval with provenance tracking, and introducing compliance‑oriented features required for production OEM environments.
-
----
-
 
 
 ---
